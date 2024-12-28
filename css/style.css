@@ -12,7 +12,7 @@ body {
 }
 
 body.dark-mode {
-    background-color: #333;
+    background-color: #212121;
     color: #fff;
 }
 
@@ -27,7 +27,7 @@ body.dark-mode {
 }
 
 body.dark-mode .container {
-    background-color: #444;
+    background-color: #414141;
     color: #fff;
 }
 

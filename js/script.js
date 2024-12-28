@@ -1,9 +1,5 @@
 document.getElementById('dark-mode-toggle').addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
-    toggleSVGColors();
-});
-
-function toggleSVGColors() {
     const isDarkMode = document.body.classList.contains('dark-mode');
     const circuitImg = document.querySelector('img[src*="circuit"]');
     const equationImg = document.querySelector('img[src*="equation"]');
@@ -17,7 +13,7 @@ function toggleSVGColors() {
         const equationSrc = equationImg.getAttribute('src');
         equationImg.setAttribute('src', isDarkMode ? equationSrc.replace('equation.svg', 'equationDark.svg') : equationSrc.replace('equationDark.svg', 'equation.svg'));
     }
-}
+});
 
 function calculateVoltage() {
     const inputVoltage = parseFloat(document.getElementById('input-voltage').value);

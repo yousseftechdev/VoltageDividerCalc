@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script defer src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Voltage Divider Calculator</h1>
@@ -31,13 +33,23 @@
             <button type="button" onclick="calculateVoltage()">Calculate</button>
         </form>
         <p id="result">Result: </p>
+        <p id="error-message" style="color: red;"></p>
     </div>
     <div class="container">
-        <img src="img/circuit.svg" alt="Voltage Divider circuit" style="color:white;"><br>
+        <img src="img/circuit.svg" alt="Circuit diagram">
+        <br>
         <b>What's a voltage divider?</b><br>
-        <p>In electronics, a voltage divider (also known as a potential divider) is a passive linear circuit that produces an output voltage (Vout) that is a fraction of its input voltage (Vin). Voltage division is the result of distributing the input voltage among the components of the divider. A simple example of a voltage divider is two resistors connected in series, with the input voltage applied across the resistor pair and the output voltage emerging from the connection between them.</p>
-        <p>If the current in the output wire is zero then the relationship between the input voltage, Vin, and the output voltage, Vout, is:</p>
-        <img src="img/equation.svg" alt="vd equation"><br><sub>(Z is resistance)</sub>
+        <p>In electronics, a voltage divider (also known as a potential divider) is a passive linear circuit that
+            produces an output voltage (Vout) that is a fraction of its input voltage (Vin). Voltage division is the
+            result of distributing the input voltage among the components of the divider. A simple example of a voltage
+            divider is two resistors connected in series, with the input voltage applied across the resistor pair and
+            the output voltage emerging from the connection between them.</p>
+        <p>If the current in the output wire is zero then the relationship between the input voltage, Vin, and the
+            output voltage, Vout, is:</p>
+        <img src="img/equation.svg">
+        <br><sub>(Z is resistance)</sub>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
     </div>
 </body>
+
 </html>

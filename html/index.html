@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltage Divider Calculator</title>
+    <script defer src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Voltage Divider Calculator</h1>
+        <h4>Fill at least 3 of the fields</h4>
+        <form id="voltage-divider-form">
+            <label for="input-voltage">Input Voltage (V):</label>
+            <input type="number" id="input-voltage" name="input-voltage">
+            <br>
+            <br>
+            <label for="resistor1">Resistor R1 (kΩ):</label>
+            <input type="number" id="resistor1" name="resistor1">
+            <br>
+            <br>
+            <label for="resistor2">Resistor R2 (kΩ):</label>
+            <input type="number" id="resistor2" name="resistor2">
+            <br>
+            <br>
+            <label for="output-voltage">Output Voltage (V):</label>
+            <input type="number" id="output-voltage" name="output-voltage">
+            <br>
+            <br>
+            <button type="button" onclick="calculateVoltage()">Calculate</button>
+        </form>
+        <p id="result">Result: </p>
+    </div>
+    <div class="container">
+        <img src="../img/circuit.svg" alt="Voltage Divider circuit" style="color:white;"><br>
+        <b>What's a voltage divider?</b><br>
+        <p>In electronics, a voltage divider (also known as a potential divider) is a passive linear circuit that produces an output voltage (Vout) that is a fraction of its input voltage (Vin). Voltage division is the result of distributing the input voltage among the components of the divider. A simple example of a voltage divider is two resistors connected in series, with the input voltage applied across the resistor pair and the output voltage emerging from the connection between them.</p>
+        <p>If the current in the output wire is zero then the relationship between the input voltage, Vin, and the output voltage, Vout, is:</p>
+        <img src="../img/equation.svg" alt="vd equation"><br><sub>(Z is resistance)</sub>
+    </div>
+</body>
+</html>
